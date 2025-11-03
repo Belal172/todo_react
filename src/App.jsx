@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import User from './User'
 
 function App() {
   const user = {
@@ -49,6 +50,7 @@ function App() {
       {/* <img src={imgPath} alt="img here" /> */}
       <button onClick={callMe}>click me</button>
       <button onClick={()=>god("shiva")}>Shiva</button>
+      <User u={user}/>
     </div>
   )
 }

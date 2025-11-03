@@ -4,7 +4,7 @@ import Hello from "./Hello"
 const Counter=()=>{
     const [count,setCount]=useState(0)
     const [rcount,setRcount]=useState(10)
-    const [display,setDispaly]=useState(false)
+    const [display,setDispaly]=useState(true)
     return(
         <div>
             <h2>counter:{count}</h2>
@@ -14,7 +14,7 @@ const Counter=()=>{
 
             <button onClick={()=>setDispaly(!display)}>toogle</button>
             {
-              display?  <Hello/>:null
+              display?  <Hello />:null
             }
 
         </div>

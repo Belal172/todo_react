@@ -1,7 +1,11 @@
+import User from "./User"
+
 function Hello(){
+   
     return(
         <div>
-            <h1>hello user</h1>
+            <h1>hello</h1>
+            
         </div>
     )
 }
