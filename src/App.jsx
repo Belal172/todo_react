@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import User from './User'
+import FormHandling from './FormHandling'
 
 function App() {
   const user = {
@@ -51,6 +52,7 @@ function App() {
       <button onClick={callMe}>click me</button>
       <button onClick={()=>god("shiva")}>Shiva</button>
       <User u={user}/>
+      <FormHandling />
     </div>
   )
 }
