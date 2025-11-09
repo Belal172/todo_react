@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import User from './User'
 import FormHandling from './FormHandling'
+import ArrayUpdate from './ArrayUpdate'
 
 function App() {
   const user = {
@@ -53,6 +54,8 @@ function App() {
       <button onClick={()=>god("shiva")}>Shiva</button>
       <User u={user}/>
       <FormHandling />
+      <hr />
+      <ArrayUpdate/>
     </div>
   )
 }
