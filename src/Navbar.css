@@ -1,3 +1,4 @@
+ @import "tailwindcss"; 
 .header {
     background-color: aquamarine;
     display: flex;
@@ -26,4 +27,8 @@
 
 .header .link h1 {
     margin: 0;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
 }
