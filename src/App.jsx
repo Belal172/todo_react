@@ -1,10 +1,12 @@
+import Header from "./Header"
+import Product from "./Product"
 
 //import './App.css'
 function App() {
   return (
     <>
-    <h1>Redux toolkit learning</h1>
-    
+    <Header />
+    <Product/>
    
     </>
   )
