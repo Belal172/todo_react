@@ -1,5 +1,9 @@
+import { useDispatch } from 'react-redux'
 import './header.css'
+import { addItem } from './rtx/slice'
+
 function Product() {
+  const dispatch=useDispatch()
   return (
   <div className="product-container">
   <div className="product-image">
@@ -8,13 +12,13 @@ function Product() {
 
   <div className="product-details">
     <h2 className="product-title">Stylish Headphones</h2>
-    <p class="product-description">
+    <p className="product-description">
       High-quality wireless headphones with noise cancellation and long battery life.
     </p>
 
     <p className="product-price">₹1,999</p>
 
-    <button className="add-to-cart">Add to Cart</button>
+    <button onClick={()=>dispatch(addItem(1))} className="add-to-cart">Add to Cart</button>
   </div>
 </div>
 

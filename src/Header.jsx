@@ -1,3 +1,4 @@
+import Cart from './Cart';
 import './header.css'
 function Header() {
   return (
@@ -10,11 +11,7 @@ function Header() {
     <a href="#">About</a>
     <a href="#">Contact</a>
   </nav>
-
-  <div className="cart">
-    <span className="cart-icon">🛒</span>
-    <span className="cart-count">0</span>
-  </div>
+<Cart/>
 </header>
 
   );
