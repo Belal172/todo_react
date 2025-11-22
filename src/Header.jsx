@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router';
 import Cart from './Cart';
 import './header.css'
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
   <div className="logo">MyShop</div>
 
   <nav className="nav">
-    <a href="#">Home</a>
+   <NavLink to="/" >Home</NavLink>
     <a href="#">Products</a>
     <a href="#">About</a>
     <a href="#">Contact</a>

@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: #b8f0bf;
   padding: 15px 30px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -40,7 +40,7 @@ body {
 }
 
 /* Cart */
-.cart {
+.cart-1 {
   position: relative;
   font-size: 1.7rem;
   cursor: pointer;
@@ -69,6 +69,7 @@ body {
   width: 700px;
   margin: auto;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
 }
 
 /* Image section */
@@ -99,14 +100,216 @@ body {
 .add-to-cart {
   padding: 12px 25px;
   font-size: 1rem;
-  background: #ff4757;
+  background: #47ff9a;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
+.btn-added-to-cart{
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #dbe9e1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; 
+}
+.remove-from-cart {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 5px;
+}
 
 .add-to-cart:hover {
-  background: #e84118;
+  background: #d6e52f;
+}
+.btn-added-to-cart:hover{
+  background-color: #eeeaea;
+
+}
+/* Grid container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card */
+.cart {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.cart:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* Product image */
+.cart img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Content section */
+.content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Title */
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Brand, price, stock, etc. */
+.brand, .price, .stock, .rating {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button */
+.add-to-cart {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #4A90E2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.add-to-cart:hover {
+  background: #3b7ac1;
+}
+
+/* Container */
+.cart-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+
+/* Header (empty but styled for future use) */
+.cart-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+/* Cart Item */
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Thumbnail */
+.item-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Details block */
+.item-details {
+  flex: 1;
+}
+
+.item-details h4 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.item-details p {
+  margin: 0;
+  color: #777;
+}
+
+/* Actions section */
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item-actions .price {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Remove button */
+.remove-from-cart {
+  padding: 6px 12px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remove-from-cart:hover {
+  background: #d9363e;
+}
+.cart-footer{
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .item-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .item-actions {
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .item-info img {
+    margin-bottom: 10px;
+  }
 }
